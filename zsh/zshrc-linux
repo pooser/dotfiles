@@ -2,19 +2,18 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/pooser/.oh-my-zsh"
+export ZSH="/home/pooser/.oh-my-zsh"
 export TERM="xterm-256color"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
 #ZSH_THEME="bira"
 #ZSH_THEME="junkfood"
 #ZSH_THEME="miloshadzic"
 #ZSH_THEME="af-magic"
-#ZSH_THEME="robbyrussell"
 #ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
@@ -25,7 +24,7 @@ export TERM="xterm-256color"
 
 # Custom themes
 ZSH_THEME='powerlevel9k/powerlevel9k'
-POWERLEVEL9K_MODE='awesome-patched'
+POWERLEVEL9K_MODE='nerdfont-complete'
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(battery time disk_usage)
@@ -126,7 +125,7 @@ POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND='lightcoral'
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git)
 # plugins=(git git-extras git-flow colored-man colorize github vagrant virtualenv virtualenvwrapper pip python brew osx zsh-syntax-highlighting npm docker django bower celery node sublime sudo supervisor web-search)
-plugins=(brew osx python pip tmux web-search copydir copyfile cp history colorize colored-man-pages zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(python pip tmux web-search copydir copyfile cp history colorize colored-man-pages zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -169,15 +168,48 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Setup for brew installation of ROOT
-pushd /usr/local >/dev/null; . bin/thisroot.sh; popd >/dev/null
+# Setup jlab specific environment variables
+# source /site/env/default.bashrc # Searches /usr/local/bin first.
+alias sucern='setup cernlib/2005'
+alias sudo='/usr/bin/sudo'
+ 
+# Set up LD_LIBRARY_PATH's
+export LD_LIBRARY_PATH=/usr/local/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib64
 
-# setup custom build of ROOT
-alias suroot6='source /Users/pooser/software/physics/root/root-6.14.00-build/bin/thisroot.sh'
+# GEANT4 environment
+alias sugeant4='source /home/pooser/Software/Physics/GEANT4/geant4.10.02.p01-install/bin/geant4.sh /home/pooser/Software/Physics/GEANT4/geant4.10.02.p01-install/bin/'
 
-# setup hall a/c software
-alias suhcana='source /Users/pooser/software/physics/hallc/hcana/setup.sh'
-alias suhaana='source /Users/pooser/software/physics/halla/setup.sh'
+# ROOT environments and versions
+alias sur5='export ROOTSYS=/home/pooser/Software/Physics/ROOT/root5-build; export PATH=${PATH}:${ROOTSYS}/bin; export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROOTSYS}/lib'
+alias sur='export ROOTSYS=/home/pooser/Software/Physics/ROOT/root-6.14.00-build; export PATH=${PATH}:${ROOTSYS}/bin; export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROOTSYS}/lib'
+
+alias swr5='source /home/pooser/Software/Physics/ROOT/root5-build/bin/thisroot.sh'
+alias swr6='source /home/pooser/Software/Physics/ROOT/root-6.14.00-build/bin/thisroot.sh'
+
+# PyROOT environments and versions
+export PYTHONPATH=/usr/lib/python3.6/
+alias supr5='export PYTHONPATH=/home/pooser/Software/Physics/ROOT/root5-build/lib'
+alias supr='export PYTHONPATH=/home/pooser/Software/Physics/ROOT/root-6.14.00-build/lib'
+
+# CODA Environments
+alias sucoda='export CODA=/home/pooser/Software/Physics/CODA/2.6.2; source /home/pooser/Software/Physics/CODA/2.6.2/.setup'
+
+# Hall A & C environment
+alias suhcana='sur; cd /home/pooser/HallC/Software/hcana/; source setup.sh; cd ../hallc_replay; source setup.sh'
+alias suhaana='sur; source /home/pooser/HallC/Software/analyzer/setup.sh'
+
+# Hall A & C evio
+alias suhcevio='export EVIO_LIBDIR=/home/pooser/HallC/Software/hcana/podd/evio/evio-4.4.5/Linux-x86_64/lib; export EVIO_INCDIR=/home/pooser/HallC/Software/hcana/podd/evio/evio-4.4.5/Linux-x86_64/include; export EVIO_BINDIR=/home/pooser/HallC/Software/hcana/podd/evio/evio-4.4.5/Linux-x86_64/bin'
+alias suhaevio='export EVIO_LIBDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/Linux-x86_64/lib; export EVIO_INCDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/common/include; export EVIO_BINDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/Linux-x86_64/bin'
+
+# Hall D environments
+alias suhdana='source /home/pooser/HallD/Software/hdpm/pkgs/env-setup/master.sh'
+
+# alias suhdpm ='source /home/pooser/HallD/Software/hdpm/setup.sh'
+# alias buildsr='suhdpm; hdpm build sim-recon'
+# alias updatesr='suhdpm; hdpm update sim-recon'
+# alias cbuildsr='suhdpm; hdpm clean-build sim-recon'
 
 alias python2='python2.7'
 alias python3='python3.7'
@@ -196,24 +228,15 @@ alias l='ls -CF'
 alias clean='rm -rf *~; rm #*#'
 alias c='clear; ls; pwd'
 alias diff='colordiff'
-# alias emacsnw='emacs -nw'
-# alias e='emacs'
-# alias enw='emacs -nw'
+alias emacsnw='emacs -nw'
+alias e='emacs'
+alias enw='emacs -nw'
 alias ping='ping -c 2'
 alias df='df -h'
 alias du='du -ch'
 alias root='root -l'
 alias h='history'
 alias grep='grep --color'
-
-alias reboot='sudo /sbin/reboot'
-alias poweroff='sudo /sbin/poweroff'
-alias halt='sudo /sbin/halt'
-alias shutdown='sudo /sbin/shutdown'
-
-alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs "$@"'
-alias e='emacs'
-alias enw='/Applications/Emacs.app/Contents/MacOS/Emacs -nw "$@"'
 
 alias reboot='sudo /sbin/reboot'
 alias poweroff='sudo /sbin/poweroff'
@@ -282,3 +305,7 @@ alias 3.='cd ../../..'
 alias 4.='cd ../../../..'
 alias 5.='cd ../../../../..'
 alias 6.='cd ../../../../../..'
+
+# =:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:
+
+
