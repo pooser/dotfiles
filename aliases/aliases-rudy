@@ -1,0 +1,30 @@
+# Setup jlab specific environment variables
+# source /site/env/default.bashrc # Searches /usr/local/bin first.
+alias sucern='setup cernlib/2005'
+alias sudo='/usr/bin/sudo'
+
+# GEANT4 environment
+alias sugeant4='source /home/pooser/Software/Physics/GEANT4/geant4.10.02.p01-install/bin/geant4.sh /home/pooser/Software/Physics/GEANT4/geant4.10.02.p01-install/bin/'
+
+# ROOT environments and versions
+alias sur5='export ROOTSYS=/home/pooser/Software/Physics/ROOT/root5-build; export PATH=${PATH}:${ROOTSYS}/bin; export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROOTSYS}/lib'
+alias sur='export ROOTSYS=/home/pooser/Software/Physics/ROOT/root-6.14.00-build; export PATH=${PATH}:${ROOTSYS}/bin; export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ROOTSYS}/lib'
+
+alias swr5='source /home/pooser/Software/Physics/ROOT/root5-build/bin/thisroot.sh'
+alias swr6='source /home/pooser/Software/Physics/ROOT/root-6.14.00-build/bin/thisroot.sh'
+
+# PyROOT environments and versions
+export PYTHONPATH=/usr/lib/python3.6/
+alias supr5='export PYTHONPATH=/home/pooser/Software/Physics/ROOT/root5-build/lib'
+alias supr='export PYTHONPATH=/home/pooser/Software/Physics/ROOT/root-6.14.00-build/lib'
+
+# CODA Environments
+alias sucoda='export CODA=/home/pooser/Software/Physics/CODA/2.6.2; source /home/pooser/Software/Physics/CODA/2.6.2/.setup'
+
+# Hall A & C environment
+alias suhcana='sur; cd /home/pooser/HallC/Software/hcana/; source setup.sh; cd ../hallc_replay; source setup.sh'
+alias suhaana='sur; source /home/pooser/HallC/Software/analyzer/setup.sh'
+
+# Hall A & C evio
+alias suhcevio='export EVIO_LIBDIR=/home/pooser/HallC/Software/hcana/podd/evio/evio-4.4.5/Linux-x86_64/lib; export EVIO_INCDIR=/home/pooser/HallC/Software/hcana/podd/evio/evio-4.4.5/Linux-x86_64/include; export EVIO_BINDIR=/home/pooser/HallC/Software/hcana/podd/evio/evio-4.4.5/Linux-x86_64/bin'
+alias suhaevio='export EVIO_LIBDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/Linux-x86_64/lib; export EVIO_INCDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/common/include; export EVIO_BINDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/Linux-x86_64/bin'

@@ -1,0 +1,13 @@
+alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs "$@"'
+alias e='emacs'
+alias enw='/Applications/Emacs.app/Contents/MacOS/Emacs -nw "$@"'
+
+# Setup for brew installation of ROOT
+pushd /usr/local >/dev/null; . bin/thisroot.sh; popd >/dev/null
+
+# setup custom build of ROOT
+alias suroot6='source /Users/pooser/software/physics/root/root-6.14.00-build/bin/thisroot.sh'
+
+# setup hall a/c software
+alias suhcana='source /Users/pooser/software/physics/hallc/hcana/setup.sh'
+alias suhaana='source /Users/pooser/software/physics/halla/setup.sh'
