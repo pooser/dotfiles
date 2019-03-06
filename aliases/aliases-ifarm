@@ -8,3 +8,10 @@ alias supr='source /apps/root/6.12.06/setroot_CUE'
 
 alias suhcana='suroot; cd work-xem/hcana; source setup.csh; cd ../hallc-replay-f2xem; source setup.csh'
 alias sucoda='source /site/coda/2.6.2/examples/coda_user_setup'
+
+alias mad='module add'
+alias mrm='module rm'
+alias mav='module avail'
+alias mls='module list'
+alias mpr='module purge'
+alias mcl='module clear'

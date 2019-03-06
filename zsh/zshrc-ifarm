@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export SHELL='/usr/local/bin/zsh'
-
 # Path to your oh-my-zsh installation.
 export ZSH="/home/pooser/.oh-my-zsh"
 export TERM="xterm-256color"
@@ -28,9 +26,13 @@ export TERM="xterm-256color"
 ZSH_THEME='powerlevel9k/powerlevel9k'
 POWERLEVEL9K_MODE='nerdfont-complete'
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(battery time disk_usage)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time disk_usage ram)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+
+POWERLEVEL9K_CONTEXT_TEMPLATE=%m
+POWERLEVEL9K_CONTEXT_REMOTE_FOREGROUND='deepskyblue3'
+POWERLEVEL9K_CONTEXT_REMOTE_BACKGROUND='white'
 
 # POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S \uE868  %m.%d.%y}'
 POWERLEVEL9K_TIME_FOREGROUND='white'
@@ -38,12 +40,6 @@ POWERLEVEL9K_TIME_BACKGROUND='plum4'
 
 POWERLEVEL9K_RAM_FOREGROUND='white'
 POWERLEVEL9K_RAM_BACKGROUND='plum4'
-
-POWERLEVEL9K_BATTERY_VERBOSE=false
-POWERLEVEL9K_BATTERY_LEVEL_FOREGROUND='white'
-POWERLEVEL9K_BATTERY_LEVEL_BACKGROUND=(deeppink4 darkorange3 darkorange3 darkseagreen4 darkseagreen4)
-POWERLEVEL9K_BATTERY_CHARGED_FOREGROUND='white'
-POWERLEVEL9K_BATTERY_CHARGING_FOREGROUND='white'
 
 POWERLEVEL9K_DISK_USAGE_WARNING_LEVEL=75
 POWERLEVEL9K_DISK_USAGE_CRITICAL_LEVEL=90
@@ -182,8 +178,21 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 export LD_LIBRARY_PATH=/usr/local/lib
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib64
 
+# Load custom alias files
 if [ -d ~/dotfiles/aliases ]; then
     . ~/dotfiles/aliases/aliases-ssh
     . ~/dotfiles/aliases/aliases-general
     . ~/dotfiles/aliases/aliases-ifarm
 fi
+
+# Check for module files
+if [ -f /etc/profile.d/modules.sh ]; then
+  source /etc/profile.d/modules.sh
+  module use /group/c-xem2/local/modulefiles
+else 
+  echo "ERROR: failed to find module system"
+fi
+
+# Load module files
+module purge
+module load zsh/latest
