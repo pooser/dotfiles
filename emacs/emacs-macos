@@ -24,11 +24,11 @@
 
 (load-theme 'solarized-dark)
 
-;; (if (display-graphic-p)
-;;     (load-theme 'solarized-dark))
+(if (display-graphic-p)
+    (load-theme 'solarized-dark))
 
-;; (if (not (display-graphic-p))
-;;         (load-theme 'solarized-light))
+(if (not (display-graphic-p))
+        (load-theme 'solarized-light))
 
 (setq ring-bell-function 'ignore)
 
