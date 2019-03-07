@@ -25,7 +25,6 @@ export TERM="xterm-256color"
 
 # Custom themes
 ZSH_THEME='powerlevel9k/powerlevel9k'
-# POWERLEVEL9K_MODE='awesome-patched'
 POWERLEVEL9K_MODE='nerdfont-complete'
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
@@ -132,7 +131,7 @@ POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND='lightcoral'
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git)
 # plugins=(git git-extras git-flow colored-man colorize github vagrant virtualenv virtualenvwrapper pip python brew osx zsh-syntax-highlighting npm docker django bower celery node sublime sudo supervisor web-search)
-plugins=(brew osx python pip tmux web-search copydir copyfile cp history colorize colored-man-pages zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(brew osx python pip tmux web-search copydir copyfile cp history colorize colored-man-pages warhol zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
