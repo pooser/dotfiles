@@ -175,7 +175,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 if [ -d ~/dotfiles/aliases ]; then
-    . ~/dotfiles/aliases/aliases-ssh
     . ~/dotfiles/aliases/aliases-mbp
+    . ~/dotfiles/aliases/aliases-ssh
     . ~/dotfiles/aliases/aliases-general
 fi

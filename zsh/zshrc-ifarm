@@ -182,9 +182,9 @@ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib64
 
 # Load custom alias files
 if [ -d ~/dotfiles/aliases ]; then
+    . ~/dotfiles/aliases/aliases-ifarm
     . ~/dotfiles/aliases/aliases-ssh
     . ~/dotfiles/aliases/aliases-general
-    . ~/dotfiles/aliases/aliases-ifarm
 fi
 
 # Check for module files
@@ -200,3 +200,4 @@ module purge
 
 module load zsh/latest
 module load tmux/latest
+module load anaconda/latest

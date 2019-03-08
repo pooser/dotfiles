@@ -1,8 +1,3 @@
-alias gitk='/apps/git/bin/gitk'
-
-alias python2='/apps/bin/python2'
-alias python3='/apps/bin/python3'
-
 alias sur='source /apps/root/6.10.02/setroot_CUE'
 alias supr='source /apps/root/6.12.06/setroot_CUE'
 
