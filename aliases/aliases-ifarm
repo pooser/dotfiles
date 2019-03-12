@@ -1,7 +1,4 @@
-alias sur='source /apps/root/6.10.02/setroot_CUE'
-alias supr='source /apps/root/6.12.06/setroot_CUE'
-
-alias suhcana='suroot; cd work-xem/hcana; source setup.csh; cd ../hallc-replay-f2xem; source setup.csh'
+alias suhcana='cd work-xem/hcana; source setup.sh; cd ../hallc-replay-f2xem; source setup.sh'
 alias sucoda='source /site/coda/2.6.2/examples/coda_user_setup'
 
 alias mad='module add'

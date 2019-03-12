@@ -191,6 +191,8 @@ fi
 if [ -f /etc/profile.d/modules.sh ]; then
   source /etc/profile.d/modules.sh
   module use /group/c-xem2/local/modulefiles
+  module use /group/c-csv/local/etc/modulefiles
+  module use /group/jpsi-007/local/modulefiles
 else 
   echo "ERROR: failed to find module system"
 fi
@@ -201,3 +203,4 @@ module purge
 module load zsh/latest
 module load tmux/latest
 module load anaconda/latest
+module load root/6.16.00
