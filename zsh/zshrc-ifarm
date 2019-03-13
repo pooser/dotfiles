@@ -69,6 +69,7 @@ POWERLEVEL9K_DIR_ETC_BACKGROUND='deepskyblue3'
 
 # POWERLEVEL9K_SHOW_CHANGESET=true
 # POWERLEVEL9K_CHANGESET_HASH_LENGTH=7
+POWERLEVEL9K_VCS_SHOW_SUBMODULE_DIRTY=false
 POWERLEVEL9K_VCS_CLEAN_FOREGROUND='white'
 POWERLEVEL9K_VCS_CLEAN_BACKGROUND='darkseagreen4'
 POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='white'
@@ -190,9 +191,9 @@ fi
 # Check for module files
 if [ -f /etc/profile.d/modules.sh ]; then
   source /etc/profile.d/modules.sh
-  module use /group/c-xem2/local/modulefiles
+  # module use /group/jpsi-007/local/modulefiles
   module use /group/c-csv/local/etc/modulefiles
-  module use /group/jpsi-007/local/modulefiles
+  module use /group/c-xem2/local/modulefiles
 else 
   echo "ERROR: failed to find module system"
 fi
@@ -204,3 +205,4 @@ module load zsh/latest
 module load tmux/latest
 module load anaconda/latest
 module load root/6.16.00
+module load gcc/latest
