@@ -13,8 +13,12 @@ alias ping='ping -c 2'
 alias df='df -h'
 alias du='du -ch'
 alias root='root -l'
-alias h='history'
 alias grep='grep --color'
+alias g='grep'
+alias w='which'
+alias h='history'
+alias hpg='history | grep'
+alias epg='env | grep'
 
 # Machine
 alias reboot='sudo /sbin/reboot'

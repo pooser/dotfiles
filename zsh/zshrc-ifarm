@@ -126,9 +126,7 @@ POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND='lightcoral'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(github python pip web-search copydir copyfile cp history colorize colored-man-pages zsh-syntax-highlighting zsh-autosuggestions)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(tmux github python pip web-search copydir copyfile cp history colorize colored-man-pages zsh-syntax-highlighting zsh-autosuggestions)
 
 #####
 # Source the site-wide syslogin and sysapps files. 
@@ -191,8 +189,6 @@ fi
 # Check for module files
 if [ -f /etc/profile.d/modules.sh ]; then
   source /etc/profile.d/modules.sh
-  # module use /group/jpsi-007/local/modulefiles
-  module use /group/c-csv/local/etc/modulefiles
   module use /group/c-xem2/local/modulefiles
 else 
   echo "ERROR: failed to find module system"
@@ -201,8 +197,20 @@ fi
 # Load module files
 module purge
 
+# module load binutils/latest
+# module load ncurses/latest
+# module load openssl/latest
+# module load stow/latest
+# module load anaconda/latest
+module load gcc/latest
+module load cmake/latest
 module load zsh/latest
 module load tmux/latest
-module load anaconda/latest
-module load root/6.16.00
-module load gcc/latest
+module load python/latest
+module load root/latest
+
+export CC=`which gcc`
+export CXX=`which g++`
+export FC=`which gfortran`
+
+source $ZSH/oh-my-zsh.sh

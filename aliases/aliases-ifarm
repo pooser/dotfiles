@@ -1,6 +1,8 @@
 alias suhcana='cd work-xem/hcana; source setup.sh; cd ../hallc-replay-f2xem; source setup.sh'
 alias sucoda='source /site/coda/2.6.2/examples/coda_user_setup'
 
+alias python='python3'
+
 alias mad='module add'
 alias mrm='module rm'
 alias msw='module swap'
@@ -18,3 +20,4 @@ alias sca='swif cancel'
 alias sst='swif status'
 alias srj='swif retry-jobs'
 alias smj='swif modify-jobs'
+alias sif='swif import -file'
