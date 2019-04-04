@@ -126,7 +126,10 @@ POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND='lightcoral'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(tmux github python pip web-search copydir copyfile cp history colorize colored-man-pages zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting colorize colored-man-pages tmux github python pip web-search copydir copyfile cp history)
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=195'
+bindkey '^ ' autosuggest-accept
 
 #####
 # Source the site-wide syslogin and sysapps files. 
