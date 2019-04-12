@@ -134,6 +134,9 @@ POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND='lightcoral'
 # plugins=(git git-extras git-flow colored-man colorize github vagrant virtualenv virtualenvwrapper pip python brew osx zsh-syntax-highlighting npm docker django bower celery node sublime sudo supervisor web-search)
 plugins=(brew osx python pip tmux web-search copydir copyfile cp history colorize colored-man-pages warhol zsh-syntax-highlighting zsh-autosuggestions)
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=195'
+bindkey '^ ' autosuggest-accept
+
 source $ZSH/oh-my-zsh.sh
 
 # oh-my-zsh aliases
