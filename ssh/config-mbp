@@ -1,0 +1,101 @@
+ForwardX11Trusted yes
+ForwardX11 yes
+ForwardAgent yes
+CheckHostIP no
+
+Host pooser
+Port 9620
+HostName localhost
+HostKeyAlias pooser
+CheckHostIP no
+LocalForward 9082 jprox.jlab.org:9082
+
+# Non-gateway JLab affiliated machines
+Host desk
+User pooser
+Hostname login1.jlab.org
+LocalForward 9722 rudy.jlab.org:22
+LocalForward 9723 jlabl1.jlab.org:22
+LocalForward 9724 ifarm1401.jlab.org:22
+LocalForward 9725 ifarm1402.jlab.org:22
+
+Host rudy
+Port 9722
+Hostname localhost
+HostKeyAlias rudy
+CheckHostIP no
+
+Host jlabl1
+Port 9722
+Hostname localhost
+HostKeyAlias jlabl1
+CheckHostIP no
+
+Host ifarm1401
+Port 9724
+Hostname localhost
+HostKeyAlias ifarm1401
+CheckHostIP no
+
+Host ifarm1402
+Port 9725
+Hostname localhost
+HostKeyAlias ifarm1402
+CheckHostIP no
+
+# Gateway affiliated JLab machines
+Host hall
+User pooser
+Hostname hallgw.jlab.org
+LocalForward 9624 cdaql1.jlab.org:22
+LocalForward 9625 cdaql2.jlab.org:22
+LocalForward 9626 cdaql3.jlab.org:22
+LocalForward 9627 cdaql4.jlab.org:22
+LocalForward 9628 cdaql5.jlab.org:22
+LocalForward 9629 alkaid.jlab.org:22
+LocalForward 9632 hcdesk2.jlab.org:22
+# open vnc://localhost:5902
+
+Host cdaql1
+Port 9624
+HostName localhost
+HostKeyAlias cdaql1
+CheckHostIP no
+
+Host cdaql2
+Port 9625
+HostName localhost
+HostKeyAlias cdaql2
+CheckHostIP no
+
+Host cdaql3
+Port 9626
+HostName localhost
+HostKeyAlias cdaql3
+CheckHostIP no
+
+Host cdaql4
+Port 9627
+HostName localhost
+HostKeyAlias cdaql4
+CheckHostIP no
+
+Host cdaql5
+Port 9628
+HostName localhost
+HostKeyAlias cdaql5
+CheckHostIP no
+
+Host alkaid
+Port 9629
+HostName localhost
+HostKeyAlias alkaid
+CheckHostIP no
+
+Host hcdesk2
+Port 9632
+User cdaq
+Hostname localhost
+HostKeyAlias hcdesk2
+CheckHostIP no
+LocalForward 5902 hcdesk2.jlab.org:5900
