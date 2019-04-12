@@ -1,0 +1,89 @@
+ForwardX11Trusted yes
+ForwardX11 yes
+ForwardAgent yes
+CheckHostIP no
+
+Host desk
+User pooser
+Hostname login1.jlab.org
+LocalForward 9120 jlabl1.jlab.org:22
+LocalForward 9121 ifarm1401.jlab.org:22
+LocalForward 9122 ifarm1402.jlab.org:22
+
+Host jlabl1l
+Port 9120
+HostName localhost
+HostKeyAlias jlabl1
+CheckHostIP no
+
+Host ifarm1401
+Port 9121
+HostName localhost
+HostKeyAlias ifarm1401
+CheckHostIP no
+
+Host ifarm1402
+Port 9122
+HostName localhost
+HostKeyAlias ifarm1402
+CheckHostIP no
+
+Host hall
+User pooser
+Hostname hallgw.jlab.org
+LocalForward 9220 cdaql1.jlab.org:22
+LocalForward 9221 cdaql2.jlab.org:22
+LocalForward 9222 cdaql3.jlab.org:22
+LocalForward 9223 cdaql4.jlab.org:22
+LocalForward 9224 cdaql5.jlab.org:22
+LocalForward 9225 hcdesk2.jlab.org:22
+LocalForward 9226 alkaid.jlab.org:22
+
+Host cdaql1
+Port 9220
+HostName localhost
+HostKeyAlias cdaql1
+CheckHostIP no
+
+Host cdaql2
+Port 9221
+HostName localhost
+HostKeyAlias cdaql2
+CheckHostIP no
+
+Host cdaql3
+Port 9222
+HostName localhost
+HostKeyAlias cdaql3
+CheckHostIP no
+
+Host cdaql4
+Port 9223
+HostName localhost
+HostKeyAlias cdaql4
+CheckHostIP no
+
+Host cdaql5
+Port 9224
+HostName localhost
+HostKeyAlias cdaql5
+CheckHostIP no
+
+Host alkaid
+Port 9226
+HostName localhost
+HostKeyAlias alkaid
+CheckHostIP no
+
+Host hcdesk2
+Port 9225
+User cdaq
+Hostname localhost
+HostKeyAlias hcdesk2
+CheckHostIP no
+LocalForward 5902 hcdesk2.jlab.org:5900
+
+Host hallcgit
+  Hostname hallcgit.jlab.org
+  User git
+  IdentityFile /home/pooser/.ssh/id_rsa_hallcgit
