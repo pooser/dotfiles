@@ -28,3 +28,6 @@ alias suhaana='sur; source /home/pooser/HallC/Software/analyzer/setup.sh'
 # Hall A & C evio
 alias suhcevio='export EVIO_LIBDIR=/home/pooser/HallC/Software/hcana/podd/evio/evio-4.4.5/Linux-x86_64/lib; export EVIO_INCDIR=/home/pooser/HallC/Software/hcana/podd/evio/evio-4.4.5/Linux-x86_64/include; export EVIO_BINDIR=/home/pooser/HallC/Software/hcana/podd/evio/evio-4.4.5/Linux-x86_64/bin'
 alias suhaevio='export EVIO_LIBDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/Linux-x86_64/lib; export EVIO_INCDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/common/include; export EVIO_BINDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/Linux-x86_64/bin'
+
+alias python='/usr/bin/python3.6'
+alias ipython='/usr/bin/ipython3'
