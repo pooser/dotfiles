@@ -212,6 +212,7 @@ module load gcc/latest
 module load cmake/latest
 module load zsh/latest
 module load tmux/latest
+module load htop/latest
 # module load python/latest
 # module load root/latest
 
