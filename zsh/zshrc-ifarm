@@ -129,7 +129,7 @@ POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND='lightcoral'
 plugins=(zsh-autosuggestions zsh-syntax-highlighting colorize colored-man-pages tmux github python pip web-search copydir copyfile cp history)
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=195'
-bindkey '^ ' autosuggest-accept
+# bindkey '^ ' autosuggest-accept
 
 #####
 # Source the site-wide syslogin and sysapps files. 
