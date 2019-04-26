@@ -14,6 +14,9 @@ alias suroot6='source /Users/pooser/software/physics/root/root-6.14.00-build/bin
 alias suhcana='source /Users/pooser/software/physics/hallc/hcana/setup.sh'
 alias suhaana='source /Users/pooser/software/physics/halla/setup.sh'
 
+# setup jana environment
+alias sujana='source /Users/pooser/daq/software/JANA2/Darwin_macosx10.14-x86_64-llvm10.0.1/setenv.sh'
+
 alias python2='python2.7'
 alias python3='python3.7'
 alias python='python3'
