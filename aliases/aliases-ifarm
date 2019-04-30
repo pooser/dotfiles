@@ -1,6 +1,5 @@
 alias suhcana='cd work-xem/hcana; source setup.sh; cd ../hallc-replay-f2xem; source setup.sh'
 alias sucoda='source /site/coda/2.6.2/examples/coda_user_setup'
-alias sujana='source /work/hallc/xem2/pooser/JANA2/Linux_CentOS7-x86_64-gcc8.3.0/setenv.sh'
 
 alias python='python3'
 
