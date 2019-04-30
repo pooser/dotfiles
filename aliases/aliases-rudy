@@ -14,7 +14,6 @@ alias swr5='source /home/pooser/Software/Physics/ROOT/root5-build/bin/thisroot.s
 alias swr6='source /home/pooser/Software/Physics/ROOT/root-6.14.00-build/bin/thisroot.sh'
 
 # PyROOT environments and versions
-export PYTHONPATH=/usr/lib/python3.6/
 alias supr5='export PYTHONPATH=/home/pooser/Software/Physics/ROOT/root5-build/lib'
 alias supr='export PYTHONPATH=/home/pooser/Software/Physics/ROOT/root-6.14.00-build/lib'
 
@@ -29,5 +28,11 @@ alias suhaana='sur; source /home/pooser/HallC/Software/analyzer/setup.sh'
 alias suhcevio='export EVIO_LIBDIR=/home/pooser/HallC/Software/hcana/podd/evio/evio-4.4.5/Linux-x86_64/lib; export EVIO_INCDIR=/home/pooser/HallC/Software/hcana/podd/evio/evio-4.4.5/Linux-x86_64/include; export EVIO_BINDIR=/home/pooser/HallC/Software/hcana/podd/evio/evio-4.4.5/Linux-x86_64/bin'
 alias suhaevio='export EVIO_LIBDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/Linux-x86_64/lib; export EVIO_INCDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/common/include; export EVIO_BINDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/Linux-x86_64/bin'
 
+# JANA2
+alias sujana='source /home/pooser/daq/JANA2/Linux_RHEL7-x86_64-gcc4.8.5/setenv.sh'
+alias suijana='source /home/pooser/daq/software/Linux_RHEL7-x86_64-gcc4.8.5/setenv.sh'
+
+# alias python away from /apps
 alias python='/usr/bin/python3.6'
 alias ipython='/usr/bin/ipython3'
+

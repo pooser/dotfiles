@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Source jlab environment for apps etc.
+# Source jlab environment for /apps etc.
 source /site/env/sysprofile
 
 export SHELL='/usr/local/bin/zsh'
