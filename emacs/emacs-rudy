@@ -33,3 +33,5 @@
 (set-default 'truncate-lines t)
 
 (setq inhibit-startup-screen t)
+
+(smart-tabs-insinuate 'c 'c++ 'python)
