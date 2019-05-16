@@ -9,6 +9,7 @@ Hostname login1.jlab.org
 LocalForward 9120 jlabl1.jlab.org:22
 LocalForward 9121 ifarm1401.jlab.org:22
 LocalForward 9122 ifarm1402.jlab.org:22
+LocalForward 9123 ifarm1801.jlab.org:22
 
 Host jlabl1l
 Port 9120
@@ -28,6 +29,12 @@ HostName localhost
 HostKeyAlias ifarm1402
 CheckHostIP no
 
+Host ifarm1801
+Port 9123
+HostName localhost
+HostKeyAlias ifarm1801
+CheckHostIP no
+
 Host hall
 User pooser
 Hostname hallgw.jlab.org
@@ -36,8 +43,8 @@ LocalForward 9221 cdaql2.jlab.org:22
 LocalForward 9222 cdaql3.jlab.org:22
 LocalForward 9223 cdaql4.jlab.org:22
 LocalForward 9224 cdaql5.jlab.org:22
-LocalForward 9225 hcdesk2.jlab.org:22
-LocalForward 9226 alkaid.jlab.org:22
+LocalForward 9225 alkaid.jlab.org:22
+LocalForward 9226 hcdesk2.jlab.org:22
 
 Host cdaql1
 Port 9220
@@ -70,13 +77,13 @@ HostKeyAlias cdaql5
 CheckHostIP no
 
 Host alkaid
-Port 9226
+Port 9225
 HostName localhost
 HostKeyAlias alkaid
 CheckHostIP no
 
 Host hcdesk2
-Port 9225
+Port 9226
 User cdaq
 Hostname localhost
 HostKeyAlias hcdesk2
