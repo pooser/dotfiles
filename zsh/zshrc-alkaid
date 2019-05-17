@@ -205,16 +205,15 @@ module purge
 
 # module load binutils/latest
 # module load ncurses/latest
-# module load openssl/latest
 # module load stow/latest
-# module load anaconda/latest
 module load gcc/latest
 module load cmake/latest
 module load zsh/latest
 module load tmux/latest
 module load htop/latest
-# module load python/latest
-# module load root/latest
+module load python/latest
+module load openssl/latest
+module load root/latest
 
 export CC=`which gcc`
 export CXX=`which g++`
