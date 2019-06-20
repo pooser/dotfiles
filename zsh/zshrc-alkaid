@@ -173,6 +173,9 @@ fi
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+[ -n "$SSH_CONNECTION" ] && unset SSH_ASKPASS
+export GIT_ASKPASS=
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -203,11 +206,11 @@ fi
 # Load module files
 module purge
 
-# module load binutils/latest
 # module load ncurses/latest
 # module load stow/latest
 module load gcc/latest
 module load cmake/latest
+module load binutils/latest
 module load zsh/latest
 module load tmux/latest
 module load htop/latest
