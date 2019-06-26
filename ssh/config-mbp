@@ -60,6 +60,8 @@ LocalForward 9626 cdaql3.jlab.org:22
 LocalForward 9627 cdaql4.jlab.org:22
 LocalForward 9628 cdaql5.jlab.org:22
 LocalForward 9629 alkaid.jlab.org:22
+LocalForward 9630 indra-s1.jlab.org:22
+LocalForward 9631 indra-s2.jlab.org:22
 LocalForward 9632 hcdesk2.jlab.org:22
 # open vnc://localhost:5902
 
@@ -97,6 +99,18 @@ Host alkaid
 Port 9629
 HostName localhost
 HostKeyAlias alkaid
+CheckHostIP no
+
+Host indra-s1
+Port 9630
+HostName localhost
+HostKeyAlias indra-s1
+CheckHostIP no
+
+Host indra-s2
+Port 9631
+HostName localhost
+HostKeyAlias indra-s2
 CheckHostIP no
 
 Host hcdesk2

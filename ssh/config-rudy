@@ -44,7 +44,9 @@ LocalForward 9222 cdaql3.jlab.org:22
 LocalForward 9223 cdaql4.jlab.org:22
 LocalForward 9224 cdaql5.jlab.org:22
 LocalForward 9225 alkaid.jlab.org:22
-LocalForward 9226 hcdesk2.jlab.org:22
+LocalForward 9226 indra-s1.jlab.org:22
+LocalForward 9227 indra-s2.jlab.org:22
+LocalForward 9228 hcdesk2.jlab.org:22
 
 Host cdaql1
 Port 9220
@@ -82,8 +84,20 @@ HostName localhost
 HostKeyAlias alkaid
 CheckHostIP no
 
-Host hcdesk2
+Host indra-s1
 Port 9226
+HostName localhost
+HostKeyAlias indra-s1
+CheckHostIP no
+
+Host indra-s2
+Port 9227
+HostName localhost
+HostKeyAlias indra-s2
+CheckHostIP no
+
+Host hcdesk2
+Port 9228
 User cdaq
 Hostname localhost
 HostKeyAlias hcdesk2
