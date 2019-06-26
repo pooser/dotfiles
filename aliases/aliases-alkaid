@@ -1,5 +1,5 @@
 alias sucoda='source /site/coda/2.6.2/examples/coda_user_setup'
-
+alias sudo='/usr/bin/sudo'
 alias python='python3'
 
 alias mad='module add'
