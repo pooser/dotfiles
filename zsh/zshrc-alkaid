@@ -217,6 +217,8 @@ module load htop/latest
 module load python/latest
 module load openssl/latest
 module load root/latest
+module load zeromq/latest
+module load czmq/latest
 
 export CC=`which gcc`
 export CXX=`which g++`
