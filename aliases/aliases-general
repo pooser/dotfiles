@@ -19,6 +19,7 @@ alias w='which'
 alias h='history'
 alias hpg='history | grep'
 alias epg='env | grep'
+alias nc='/usr/bin/nc'
 
 # Machine
 alias reboot='sudo /sbin/reboot'
