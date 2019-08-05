@@ -117,7 +117,7 @@ CheckHostIP no
 Host indra-s3
 Port 9632
 HostName localhost
-HostKeyAlias indra-s2
+HostKeyAlias indra-s3
 CheckHostIP no
 
 Host hcdesk2

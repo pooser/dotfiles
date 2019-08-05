@@ -46,7 +46,7 @@ LocalForward 9224 cdaql5.jlab.org:22
 LocalForward 9225 alkaid.jlab.org:22
 LocalForward 9226 indra-s1.jlab.org:22
 LocalForward 9227 indra-s2.jlab.org:22
-LocalForward 9228 indra-s2.jlab.org:22
+LocalForward 9228 indra-s3.jlab.org:22
 LocalForward 9229 hcdesk2.jlab.org:22
 
 Host cdaql1
