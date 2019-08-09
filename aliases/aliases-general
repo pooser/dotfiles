@@ -1,5 +1,6 @@
 # Command line
 alias lt='ls -ltrh'
+alias lta='ls -ltrha'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
