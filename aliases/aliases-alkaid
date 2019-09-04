@@ -13,6 +13,4 @@ alias mcl='module clear'
 alias mpu='module purge'
 alias mwi='module whatis'
 
-alias sujana='source /home/pooser/JANA2/Linux_CentOS7-x86_64-gcc4.8.5/setenv.sh;
-	      mrm gcc/latest; mrm root/latest;
-	      unset CC; unset CXX; unset FC; cd /home/pooser/JANA2/'
+alias sujana='export JANA_HOME=/home/pooser/JANA2/ && export PATH=$PATH:$JANA_HOME && cd $JANA_HOME'
