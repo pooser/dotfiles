@@ -1,0 +1,8 @@
+# back up schedule on 4 TB external hard drive
+# back up every night at midnight
+00 00 * * * rsync -aAXv / --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/u/*","/apps/*","/site/*","/scratch/*"} /mnt/wd-book-4tb/bkups/daily --log-file=/home/pooser/.rsync-daily.log
+# back up every Friday at 4 am
+00 04 * * FRI rsync -aAXv / --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/u/*","/apps/*","/site/*","/scratch/*"} /mnt/wd-book-4tb/bkups/weekly --log-file=/home/pooser/.rsync-weekly.log
+# bzip the most recent daily backup on the first and fifteenth of each month and delete the previous one upon completion
+00 04 1 * * tar -cvjf /mnt/wd-book-4tb/bkups/monthly/bkup-`date +\%m-\%d-\%Y`.tar.bz2 /mnt/wd-book-4tb/bkups/daily >> ~/.bzip-bkup-first.log 2>&1 && find /mnt/wd-book-4tb/bkups/monthly/bkup* -mtime +4 -type f -delete
+00 04 15 * * tar -cvjf /mnt/wd-book-4tb/bkups/monthly/bkup-`date +\%m-\%d-\%Y`.tar.bz2 /mnt/wd-book-4tb/bkups/daily >> ~/.bzip-bkup-fifteenth.log 2>&1 && find /mnt/wd-book-4tb/bkups/monthly/bkup* -mtime +4 -type f -delete

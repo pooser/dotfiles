@@ -184,6 +184,9 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Set up PATH's
+export PATH=$PATH:$HOME/.local/bin
+
 # Set up LD_LIBRARY_PATH's
 export LD_LIBRARY_PATH=/usr/local/lib
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib64
