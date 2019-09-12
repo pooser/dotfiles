@@ -112,6 +112,10 @@ CheckHostIP no
 LocalForward 5902 hcdesk2.jlab.org:5900
 
 Host hallcgit
-  Hostname hallcgit.jlab.org
-  User git
-  IdentityFile /home/pooser/.ssh/id_rsa_hallcgit
+Hostname hallcgit.jlab.org
+User git
+IdentityFile ~/.ssh/id_rsa_hallcgit
+
+Host gitlab.com
+Preferredauthentications publickey
+IdentityFile /home/pooser/.ssh/id_rsa_gitlab
