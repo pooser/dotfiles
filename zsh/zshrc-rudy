@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Source jlab environment for /apps etc.
-source /site/env/sysprofile
+# source /site/env/sysprofile
 
 export SHELL='/usr/local/bin/zsh'
 
@@ -196,3 +196,7 @@ if [ -d ~/dotfiles/aliases ]; then
     . ~/dotfiles/aliases/aliases-rudy
     . ~/dotfiles/aliases/aliases-general
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

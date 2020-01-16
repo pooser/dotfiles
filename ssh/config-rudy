@@ -119,3 +119,7 @@ IdentityFile ~/.ssh/id_rsa_hallcgit
 Host gitlab.com
 Preferredauthentications publickey
 IdentityFile /home/pooser/.ssh/id_rsa_gitlab
+
+Host github.com
+Preferredauthentications publickey
+IdentityFile /home/pooser/.ssh/id_rsa
