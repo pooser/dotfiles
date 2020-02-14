@@ -15,4 +15,4 @@ alias mwi='module whatis'
 
 alias sujana='export JANA_HOME=/home/pooser/JANA2/ && export PATH=$PATH:$JANA_HOME && cd $JANA_HOME && export JANA_PLUGIN_PATH=$JANA_HOME'
 
-aliad clion='~/clion/clion-2019.2.4/bin/clion.sh &'
+alias clion='~/clion/clion-2019.2.4/bin/clion.sh &'

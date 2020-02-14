@@ -1,0 +1,8 @@
+alias python='python3'
+alias sucoda='source /site/coda/2.6.2/examples/coda_user_setup.sh'
+alias suhco='mpu;
+	     cd /home/cdaq/hallc-online/hcana;
+             source setup.sh;
+	     source /apps/root/6.08.00/setroot_CUE.bash;
+	     cd /home/cdaq/hallc-online/hallc_replay;
+	     source setup.sh;'
