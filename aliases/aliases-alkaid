@@ -13,6 +13,6 @@ alias mcl='module clear'
 alias mpu='module purge'
 alias mwi='module whatis'
 
-alias sujana='export JANA_HOME=/home/pooser/JANA2/ && export PATH=$PATH:$JANA_HOME && cd $JANA_HOME && export JANA_PLUGIN_PATH=$JANA_HOME'
+alias sujana='export JANA_HOME=/home/pooser/jana2/JANA2-install && export PATH=$PATH:$JANA_HOME/bin && export JANA_PLUGIN_PATH=$JANA_HOME/plugins && cd /home/pooser/jana2/JANA2'
 
 alias clion='~/clion/clion-2019.2.4/bin/clion.sh &'

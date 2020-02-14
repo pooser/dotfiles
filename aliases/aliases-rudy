@@ -29,8 +29,7 @@ alias suhcevio='export EVIO_LIBDIR=/home/pooser/HallC/Software/hcana/podd/evio/e
 alias suhaevio='export EVIO_LIBDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/Linux-x86_64/lib; export EVIO_INCDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/common/include; export EVIO_BINDIR=/home/pooser/HallC/Software/analyzer/evio/evio-4.4.6/Linux-x86_64/bin'
 
 # JANA2
-alias sujana='source /home/pooser/daq/JANA2/Linux_RHEL7-x86_64-gcc4.8.5/setenv.sh'
-alias suijana='source /home/pooser/daq/software/Linux_RHEL7-x86_64-gcc4.8.5/setenv.sh'
+alias sujana='export JANA_HOME=/home/pooser/daq/JANA2/ && export PATH=$PATH:$JANA_HOME && cd $JANA_HOME && export JANA_PLUGIN_PATH=$JANA_HOME'
 
 # alias python away from /apps
 alias python='/usr/bin/python3.6'
