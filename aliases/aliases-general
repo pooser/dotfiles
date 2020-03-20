@@ -22,6 +22,7 @@ alias hpg='history | grep'
 alias epg='env | grep'
 alias nc='/usr/bin/nc'
 alias sucl='source ~/dotfiles/zsh/zshrc-clion'
+alias supc='source ~/dotfiles/zsh/zshrc-pycharm'
 
 # Machine
 alias reboot='sudo /sbin/reboot'
