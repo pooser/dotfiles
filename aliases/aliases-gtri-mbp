@@ -9,6 +9,19 @@ alias py='python3'
 alias py2='python2'
 alias py3='python3'
 
+alias bsl='brew services list'
+alias bsst='brew services start'
+alias bssp='brew services stop'
+alias bsrt='brew services restart'
+alias bs='brew search'
+alias bio='brew info'
+alias bil='brew install'
+alias bul='brew uninstall'
+
 alias sue='export EPICS_BASE=${HOME}/gtri/awtd/tools/EPICS/epics-base;
-           export EPICS_HOST_ARCH=$(${EPICS_BASE}/startup/EpicsHostArch);
-	   export PATH=${EPICS_BASE}/bin/${EPICS_HOST_ARCH}:${PATH}'
+	   export EPICS_HOST_ARCH=$(${EPICS_BASE}/startup/EpicsHostArch);
+	   export PATH=${EPICS_BASE}/bin/${EPICS_HOST_ARCH}:${PATH};
+	   export EPICS_CA_AUTO_ADDR_LIST=NO;
+	   export EPICS_CA_ADDR_LIST=localhost'
+
+alias css='/Users/epooser3/gtri/awtd/projects/fidaq/css-config/phoebus/phoebus.sh'
