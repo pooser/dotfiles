@@ -19,11 +19,25 @@ alias bs='brew search'
 alias bio='brew info'
 alias bil='brew install'
 alias bul='brew uninstall'
+alias bue='brew upgrade'
 
-alias sue='export EPICS_BASE=${HOME}/gtri/awtd/tools/EPICS/epics-base;
+# epics config
+alias sue='export EPICS_BASE=${HOME}/gtri/awtd/tools/epics/epics-base;
 	   export EPICS_HOST_ARCH=$(${EPICS_BASE}/startup/EpicsHostArch);
 	   export PATH=${EPICS_BASE}/bin/${EPICS_HOST_ARCH}:${PATH};
 	   export EPICS_CA_AUTO_ADDR_LIST=NO;
 	   export EPICS_CA_ADDR_LIST=localhost'
 
+# css/phoebus config
 alias css='/Users/epooser3/gtri/awtd/projects/fidaq/css-config/phoebus/phoebus.sh'
+
+# scale config
+alias scale='/Applications/SCALE-6.2.4.app/Contents/Resources/bin/scalerte'
+alias fulcrum='/Applications/SCALE-6.2.4.app/Contents/Resources/bin/Fulcrum'
+
+# mcnp conig
+alias sumc='export MCNP_BASE=${HOME}/gtri/awtd/tools/mcnp/src;
+      	    export PATH=${MCNP_BASE}/MCNP_CODE/bin:${PATH};
+	    export DATAPATH=${MCNP_BASE}/MCNP_DATA;
+	    export ISCDATA=${MCNP_BASE}/MCNP_CODE/MCNP620/Utilities/ISC/data;
+	    export DISPLAY=:0.0'
