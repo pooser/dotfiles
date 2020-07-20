@@ -2,17 +2,6 @@ alias sucoda='source /site/coda/2.6.2/examples/coda_user_setup'
 alias sudo='/usr/bin/sudo'
 alias python='python3'
 
-alias mad='module add'
-alias mrm='module rm'
-alias msw='module swap'
-alias msh='module show'
-alias mls='module list'
-alias mav='module avail'
-alias mup='module update'
-alias mcl='module clear'
-alias mpu='module purge'
-alias mwi='module whatis'
-
 alias sujana='export JANA_HOME=/home/pooser/jana2/JANA2-install && export PATH=$PATH:$JANA_HOME/bin && export JANA_PLUGIN_PATH=$JANA_HOME/plugins && cd /home/pooser/jana2/JANA2'
 
 alias clion='~/clion/clion-2019.2.4/bin/clion.sh &'

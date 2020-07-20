@@ -3,17 +3,6 @@ alias sucoda='source /site/coda/2.6.2/examples/coda_user_setup'
 
 alias python='python3'
 
-alias mad='module add'
-alias mrm='module rm'
-alias msw='module swap'
-alias msh='module show'
-alias mls='module list'
-alias mav='module avail'
-alias mup='module update'
-alias mcl='module clear'
-alias mpu='module purge'
-alias mwi='module whatis'
-
 alias sru='swif run'
 alias sls='swif list'
 alias sca='swif cancel'

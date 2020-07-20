@@ -9,17 +9,7 @@ alias py='python3'
 alias py2='python2'
 alias py3='python3'
 alias ipython='/usr/local/bin/ipython'
-alias ip='/usr/local/bin/ipython'
-
-alias bsls='brew services list'
-alias bsst='brew services start'
-alias bssp='brew services stop'
-alias bsrt='brew services restart'
-alias bs='brew search'
-alias bio='brew info'
-alias bil='brew install'
-alias bul='brew uninstall'
-alias bue='brew upgrade'
+alias ip='ipython'
 
 # epics config
 alias sue='export EPICS_BASE=${HOME}/gtri/awtd/tools/epics/epics-base;
