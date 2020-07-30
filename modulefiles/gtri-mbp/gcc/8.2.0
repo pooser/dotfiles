@@ -1,0 +1,20 @@
+#%Module1.0#####################################################################
+##
+## for zsh
+##
+proc ModulesHelp { } {
+    puts stderr "       This module sets up the environment for gcc 8.2.0 compiler"
+    puts stderr "       prepends /Users/epooser3/scratch/scale/tpl/gcc-8.2.0-build/bin to your path"
+    puts stderr "       prepends /Users/epooser3/scratch/scale/tpl/gcc-8.2.0-build/share/man to your manpage path"
+}
+module-whatis   "gcc 8.2.0"
+
+# for Tcl script use only
+set     version      3.5.7
+
+# for Tcl script use only
+set     version         4.1.4
+set iprefix /Users/epooser3/scratch/scale/tpl/gcc-8.2.0-build
+
+prepend-path    PATH			$iprefix/bin
+prepend-path    MANPATH			$iprefix/share/man
