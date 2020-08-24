@@ -35,3 +35,7 @@
 (set-default 'truncate-lines t)
 
 (setq inhibit-startup-screen t)
+
+(setq load-path (cons (expand-file-name "/Users/epooser3/dotfiles/emacs/lisp-pkgs") load-path))
+(global-font-lock-mode t)
+(load "mcnpgen-mode")
