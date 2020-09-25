@@ -183,7 +183,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 if [ -d ~/dotfiles/aliases ]; then
     . ~/dotfiles/aliases/aliases-general
-    . ~/dotfiles/aliases/aliases-ssh
+    . ~/dotfiles/aliases/aliases-ssh-gtri
     . ~/dotfiles/aliases/aliases-modules
     . ~/dotfiles/aliases/aliases-brew
     . ~/dotfiles/aliases/aliases-git

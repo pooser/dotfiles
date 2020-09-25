@@ -30,3 +30,4 @@ alias sumc='export MCNP_BASE=${HOME}/gtri/awtd/tools/mcnp/src;
       	    export PATH=${MCNP_BASE}/MCNP_CODE/bin:${PATH};
 	    export DATAPATH=${MCNP_BASE}/MCNP_DATA;
 	    export ISCDATA=${MCNP_BASE}/MCNP_CODE/MCNP620/Utilities/ISC/data'
+alias clm='rm out*; rm comou*; rm runtp*; rm meshta*; rm wss*; rm rss*; rm wxx*; rm mdat*; rm mcta*'

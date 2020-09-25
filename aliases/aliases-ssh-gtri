@@ -1,0 +1,2 @@
+alias lethe='ssh -tXY lethe'
+alias phlegethon='ssh -tXY phlegethon'

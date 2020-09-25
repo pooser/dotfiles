@@ -1,0 +1,31 @@
+ForwardX11Trusted yes
+ForwardX11 yes
+ForwardAgent yes
+CheckHostIP no
+
+# Host epooser3
+# Port 9620
+# HostName localhost
+# HostKeyAlias epooser3
+# CheckHostIP no
+
+# Host lethe
+# User epooser3
+# Hostname 10.60.41.118
+# LocalForward 9696 ice-login1.icl.gtri.org:22
+
+# Host phlegethon
+# Port 9696
+# Hostname localhost
+# HostKeyAlias phlegethon
+# CheckHostIP no
+
+# office rhel8 desktop
+Host lethe
+User epooser3
+Hostname 10.60.41.118
+
+# icehammer cluster
+Host phlegethon
+User epooser3
+Hostname ice-login1.icl.gtri.org
